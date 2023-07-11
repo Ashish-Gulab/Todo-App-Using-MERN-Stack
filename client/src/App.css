@@ -1,0 +1,132 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 50%;
+  margin: 0 auto;
+}
+
+header{
+  text-align: center;
+}
+
+header h1{
+  font-size: 80px;
+  color: #3a3939;
+  margin: 30px 0;
+  font-weight: 200;
+}
+
+input{
+  font-size: 20px;
+  color: #3a3939;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #3a3939;
+  margin-bottom: 10px;
+}
+
+.task{
+  background-color:#34495e;
+  padding:15px;
+  margin:5px;
+  list-style:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.task span{
+  color:#ffffff;
+}
+
+.icon{
+  float:right;
+  margin: 0px 7px;
+}
+
+/* .btn_red{
+  margin-bottom:15px;
+} */
+
+/* .btn_green:hover{
+  color: #2ed573;
+} */
+
+/* .btn_red:hover{
+  color: #ff4757;
+}
+
+.btn_blue:hover{
+  color: blue;
+} */
+
+article{
+  display:grid;
+}
+
+.edit-todo{
+  width: 85%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  
+}
+
+.button{
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected{
+  color: #fff;
+  background-color: #6c6777;
+}
+
+.button.clear{
+  float:right;
+  color: #FFF;
+  background-color: red;
+  width: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  header h1{
+    font-size: 50px;
+    font-weight: 180;
+    margin:20px;
+  }
+
+  .button{
+    margin: 10px 5px;
+    padding: 10px;
+    width: 70px;
+  }
+
+  .button.clear{
+    float:left;
+  }
+
+  .edit-todo{
+    width:60%;
+  }
+
+  input{
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}
